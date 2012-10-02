@@ -31,14 +31,9 @@
     return YES;
 }
 
-- (IBAction)firstActionInAppDelegate:(id)sender
+- (IBAction)action:(id)sender
 {
-    NSLog(@"firstActionInAppDelegate");
-}
-
-- (IBAction)secondActionInAppDelegate:(id)sender
-{
-    NSLog(@"secondActionInAppDelegate");
+    NSLog(@"action !");
 }
 
 @end
@@ -53,19 +48,7 @@
 }
 - (void) viewDidLoad
 {
-    NSLog(@"control events: %d",[_button allControlEvents]);
-    NSLog(@"%d targets:",[[_button allTargets] count]);
-    for (id target in [_button allTargets])
-    {
-        NSLog(@"target : %@ actions : %@",target, [_button actionsForTarget:target forControlEvent:UIControlEventTouchUpInside]);
-    }
-    [_button addTarget:nil action:@selector(secondActionInAppDelegate:) forControlEvents:UIControlEventTouchUpInside];
-    NSLog(@"%d targets:",[[_button allTargets] count]);
-}
-
-- (IBAction)actionInVC:(id)sender
-{
-    NSLog(@"actionInVC");
+    NSLog(@"number of targets : %d",[[_button allTargets] count]);
 }
 @end
 

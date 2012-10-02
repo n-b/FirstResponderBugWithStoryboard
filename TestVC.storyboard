@@ -22,8 +22,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="actionInVC:" destination="0id-jZ-MT2" eventType="touchUpInside" id="HG8-yG-8XC"/>
-                                    <action selector="doItNow:" destination="aCY-A6-mnl" eventType="touchUpInside" id="Weu-5P-REf"/>
+                                    <action selector="action:" destination="aCY-A6-mnl" eventType="touchUpInside" id="XQS-yQ-Uao"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,7 +48,6 @@
         <class className="TestVC" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TestVC.h"/>
             <relationships>
-                <relationship kind="action" name="actionInVC:"/>
                 <relationship kind="outlet" name="_button" candidateClass="UIButton"/>
             </relationships>
         </class>
